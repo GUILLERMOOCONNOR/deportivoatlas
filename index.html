@@ -237,12 +237,6 @@
     margin-top: 1rem;
   }
 
-  .historia-text[contenteditable="true"]:focus {
-    outline: 2px dashed var(--celeste-dark);
-    outline-offset: 4px;
-    border-radius: 2px;
-  }
-
   .historia-stats {
     display: flex;
     flex-direction: column;
@@ -269,14 +263,6 @@
     text-transform: uppercase;
     color: var(--marron-light);
     margin-top: 0.25rem;
-  }
-
-  .edit-hint {
-    font-size: 0.72rem;
-    color: var(--celeste-dark);
-    margin-top: 0.75rem;
-    font-style: italic;
-    opacity: 0.7;
   }
 
   /* GALERÍA */
@@ -452,27 +438,26 @@
     <h2 class="section-title">Historia del club</h2>
     <div class="historia-grid">
       <div>
-        <div class="historia-text" contenteditable="true" spellcheck="false">
-          <p>El Club Deportivo Atlas nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un punto de encuentro para la comunidad, formando no solo jugadores sino también personas.</p>
-          <p>A lo largo de las décadas, Atlas consolidó su identidad con los colores marrón y celeste, símbolo de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su huella en la historia de la institución.</p>
+        <div class="historia-text">
+          <p>El Club Deportivo Atlas nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un punto de encuentro para la comunidad de Trelew.</p>
+          <p>A lo largo de las décadas, Atlas consolidó su identidad con los colores marrón y celeste, símbolo de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su huella en la historia del club.</p>
           <p>Hoy, el club continúa apostando al deporte como herramienta de integración social, con divisiones inferiores activas y un plantel comprometido con la camiseta.</p>
         </div>
-        <p class="edit-hint">✎ Hacé clic en el texto para editarlo directamente.</p>
       </div>
 
       <div class="historia-divider"></div>
 
       <div class="historia-stats">
         <div class="stat-card">
-          <div class="stat-number" contenteditable="true">1978</div>
+          <div class="stat-number">1978</div>
           <div class="stat-label">Año de fundación</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" contenteditable="true">46</div>
+          <div class="stat-number">46</div>
           <div class="stat-label">Años de historia</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" contenteditable="true">200+</div>
+          <div class="stat-number">200+</div>
           <div class="stat-label">Socios activos</div>
         </div>
       </div>
