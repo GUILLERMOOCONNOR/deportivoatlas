@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Club Deportivo Atlas</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
   :root {
     --marron: #5C3A1E;
@@ -366,6 +367,35 @@
     letter-spacing: 0.08em;
   }
 
+  .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--celeste);
+    color: var(--marron-dark);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .social-links a:hover {
+    background: var(--celeste-light);
+    transform: translateY(-3px);
+  }
+
+  .social-links a i {
+    font-size: 1.2rem;
+  }
+
   /* ANIMACIONES */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -439,10 +469,10 @@
     <div class="historia-grid">
       <div>
         <div class="historia-text">
-          <p>Deportivo Atlas Asociación Civil nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un punto de encuentro para la comunidad.</p>
-          <p>A lo largo de los años, Atlas consolidó su identidad con los colores marrón y celeste, símbolo de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su marca en la institución.</p>
-          <p>Hoy, el club continúa apostando al deporte como herramienta de integración social, con divisiones inferiores activas y apunta a la continuidad de la primera.</p>
-          <p>En 2025 comenzaron las tareas iniciales de cara al predio cercano a Barrio Los Aromos dd Trelew donde hoy se están realizando lss tareas de movimiento de suelo</p>
+          <p>Deportivo Atlas Asociación Civil nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un punto de encuentro para la comunidad.
+          <p>A lo largo de los años, Atlas consolidó su identidad con los colores marrón y celeste, símbolos de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su marca en la historia del club.
+          <p>Hoy, el club continúa apostando al deporte como herramienta de integración social, con divisiones inferiores activas y con miras a la continuidad de la categoría primera.
+          <p>En 2025 comenzaron las tareas iniciales para el predio cercano a Barrio Los Aromos de Trelew, donde se están realizando trabajos de movimiento de suelo y preparación del terreno.
         </div>
       </div>
 
@@ -492,6 +522,17 @@
 <footer>
   <div class="footer-name">Deportivo Atlas<span>Asociación Civil</span></div>
   <p>El celeste y marrón de la Patagonia</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/dep_atlas.oficial/" target="_blank" rel="noopener noreferrer" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/p/Dep-Atlas-100047581760363/?locale=es_LA" target="_blank" rel="noopener noreferrer" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://wa.me/542804967090" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 </footer>
 
 
