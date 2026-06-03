@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Club Deportivo Atlas</title>
+<link rel="icon" type="image/jpeg" href="logoatlas.jpeg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
@@ -295,16 +296,29 @@
     margin-top: 1rem;
   }
 
+  .predio-divider {
+    background: linear-gradient(to bottom, var(--celeste), transparent);
+    align-self: stretch;
+  }
+
+  /* DOS FOTOS PREDIO */
+  .predio-images {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
   .predio-image {
     position: relative;
     overflow: hidden;
     background: var(--gris);
     border: 2px solid var(--celeste);
+    height: 220px;
   }
 
   .predio-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
     transition: transform 0.4s;
@@ -312,11 +326,6 @@
 
   .predio-image:hover img {
     transform: scale(1.03);
-  }
-
-  .predio-divider {
-    background: linear-gradient(to bottom, var(--celeste), transparent);
-    align-self: stretch;
   }
 
   /* GALERÍA */
@@ -478,6 +487,7 @@
     .historia-divider { display: none; }
     .predio-grid { grid-template-columns: 1fr; }
     .predio-divider { display: none; }
+    .predio-image { height: 200px; }
     .galeria-grid {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, 200px);
@@ -525,10 +535,10 @@
     <div class="historia-grid">
       <div>
         <div class="historia-text">
-          <p>Deportivo Atlas Asociación Civil nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un espacio de recreación y sociabilización. 
-          <p>A lo largo de los años, Atlas consolidó su identidad con los colores marrón y celeste, símbolos de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su importa.
-          <p>Hoy, el club continúa apostando al deporte como herramienta de integración social, con divisiones inferiores activas y con miras a la continuidad de la categoría primera.
-          <p>En 2025 comenzaron las tareas iniciales para el predio cercano a Barrio Los Aromos de Trelew, donde se están realizando trabajos de movimiento de suelo y preparación del terreno.
+          <p>Deportivo Atlas Asociación Civil nació de la unión de vecinos que compartían una misma pasión por el fútbol y el deporte. Desde sus primeros años, el club se convirtió en un espacio de recreación y sociabilización.</p>
+          <p>A lo largo de los años, Atlas consolidó su identidad con los colores marrón y celeste, símbolos de la tierra y el cielo patagónico. Cada generación aportó su energía y dejó su importa.</p>
+          <p>Hoy, el club continúa apostando al deporte como herramienta de integración social, con divisiones inferiores activas y con miras a la continuidad de la categoría primera.</p>
+          <p>En 2025 comenzaron las tareas iniciales para el predio cercano a Barrio Los Aromos de Trelew, donde se están realizando trabajos de movimiento de suelo y preparación del terreno.</p>
         </div>
       </div>
 
@@ -557,15 +567,20 @@
       <div class="predio-content">
         <div class="predio-text">
           <p>En 2025 comenzaron las tareas iniciales para el predio cercano a Barrio Los Aromos de Trelew, donde se están realizando trabajos de movimiento de suelo y preparación del terreno.</p>
-          <p>Este proyecto representa un hito fundamental en la historia del club, marcando el crecimiento institucional y la consolidación de una infraestructura propia para el desarrollo deportivo. </p>
+          <p>Este proyecto representa un hito fundamental en la historia del club, marcando el crecimiento institucional y la consolidación de una infraestructura propia para el desarrollo deportivo.</p>
           <p>Con dedicación y el apoyo de nuestra comunidad, estamos construyendo el espacio donde futuras generaciones de atletas escribirán nuevas páginas de gloria para Deportivo Atlas.</p>
         </div>
       </div>
 
       <div class="predio-divider"></div>
 
-      <div class="predio-image">
-        <img src="predio.jpg" alt="Predio Deportivo Atlas">
+      <div class="predio-images">
+        <div class="predio-image">
+          <img src="predio.jpg" alt="Predio Deportivo Atlas">
+        </div>
+        <div class="predio-image">
+          <img src="predio_ (3).jpg" alt="Predio Deportivo Atlas 2">
+        </div>
       </div>
     </div>
   </div>
@@ -622,7 +637,6 @@
     </a>
   </div>
 </footer>
-
 
 </body>
 </html>
