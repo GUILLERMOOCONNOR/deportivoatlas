@@ -427,7 +427,10 @@
     .predio-image { height: 200px; }
     .galeria-grid {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, 200px);
+      grid-template-rows: repeat(4, 200px) 240px;
+    }
+    .galeria-slot:last-child {
+      grid-column: 1 / -1;
     }
     nav ul { display: none; }
   }
